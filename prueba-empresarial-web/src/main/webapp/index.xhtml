@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <br/>
+        <h:form>
+            <h:panelGrid columns="2">
+                <h:outputLabel value="Numero1"> </h:outputLabel>
+                <h:inputText value="#{operacionesBasicasControlador.num1}"/>
+                
+                <h:outputLabel value="Numero2"></h:outputLabel>
+                <h:inputText value="#{operacionesBasicasControlador.num2}"/>
+                
+                <h:commandButton value="Suma" action="#{operacionesBasicasControlador.realizaOperacion('suma')}"/>
+                <h:outputLabel value=""></h:outputLabel>
+                <h:commandButton value="Resta" action="#{operacionesBasicasControlador.realizaOperacion('resta')}"/>
+                <h:outputLabel value=""></h:outputLabel>
+                <h:commandButton value="Muliplicacion" action="#{operacionesBasicasControlador.realizaOperacion('multiplicacion')}"/>
+                <h:outputLabel value=""></h:outputLabel>
+                <h:commandButton value="Division" action="#{operacionesBasicasControlador.realizaOperacion('division')}"/>
+                <h:outputLabel value=""></h:outputLabel>
+                
+                <h:outputLabel value="Resultado"></h:outputLabel>
+                <h:inputText value="#{operacionesBasicasControlador.resultadoOperacion}"/>
+            </h:panelGrid>
+        </h:form>
+    </h:body>
+</html>
+
